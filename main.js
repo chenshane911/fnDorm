@@ -38,6 +38,16 @@ $(document).ready(function(){
      {
       $('.appicon').fadeOut();
      }
+		
+		
+	 if ($(this).scrollTop()>0)
+     {
+        $('.scroll').fadeOut();
+     }
+    else
+     {
+      $('.scroll').fadeIn();
+     }
 	
 
 	});
