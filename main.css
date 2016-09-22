@@ -133,7 +133,8 @@ html, body {
 	width: 100px;
 	position: relative;
 	left: 60%;
-	padding: 30px;
+	top:190px;
+	
 }
 
 
@@ -141,11 +142,13 @@ html, body {
 .why{
 	width: 500px;
 	position: relative;
-	left: 50%;
+	left: 40px;
+	top: 10px;
 	color:#373737;
 	letter-spacing: 1.3px;
 	line-height: 31.5px;
 	font-size: .94em;
+	padding-bottom: 30px;
 }
 
 

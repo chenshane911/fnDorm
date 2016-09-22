@@ -12,7 +12,7 @@ $(document).ready(function(){
 
 
 	$(window).scroll(function() {
-    if ($(this).scrollTop()>0)
+    if ($(this).scrollTop()>220)
      {
         $('.p1').fadeOut();
      }
@@ -20,9 +20,27 @@ $(document).ready(function(){
      {
       $('.p1').fadeIn();
      }
+	 if ($(this).scrollTop()>220)
+     {
+        $('.p12').fadeOut();
+     }
+    else
+     {
+      $('.p12').fadeIn();
+     }
+	
+		
+	 if ($(this).scrollTop()>620)
+     {
+        $('.appicon').fadeIn();
+     }
+    else
+     {
+      $('.appicon').fadeOut();
+     }
 	
 
-	
+	});
 	
 	
 });
