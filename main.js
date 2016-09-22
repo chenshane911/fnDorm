@@ -30,7 +30,7 @@ $(document).ready(function(){
      }
 	
 		
-	 if ($(this).scrollTop()>620)
+	 if ($(this).scrollTop()>320)
      {
         $('.appicon').fadeIn();
      }
