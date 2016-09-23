@@ -101,7 +101,7 @@ html, body {
 .p1{
 	position: fixed;
 	left: 44px;
-	top: 53%;
+	top: 400px;
 	padding:10px 42px; 
 	background-color: #DEDEDE;
 	z-index: 1;
@@ -112,7 +112,7 @@ html, body {
 .p12{
 	position: fixed;
 	left: 44px;
-	top: 60%;
+	top: 445px;
 	padding:10px 42px; 
 	background-color: #DEDEDE;
 	z-index: 1;
