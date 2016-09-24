@@ -9,6 +9,12 @@ $(document).ready(function(){
 
   $(window).scroll(function() {
 
+    if ($(this).scrollTop() < 10) {
+      $('#back-top').fadeOut();
+    } else {
+      $('#back-top').fadeIn();
+    }
+
     if ($(this).scrollTop()>220)
     {
       $('.p1').fadeOut();
@@ -50,12 +56,20 @@ $(document).ready(function(){
 
   $('.gallery-btn').click(function() {
     var $ele = $('.gallery');
-    $ele.toggleClass('show');
+    if ($ele.hasClass('show')) {
+      closeGallery();
+    } else {
+      $ele.addClass('show');
+      $('body').css('overflow', 'hidden');
+    }
   });
 
-  $('.gallery-close').click(function() {
+  $('.gallery-close').click(closeGallery);
+
+  function closeGallery() {
     $('.gallery').removeClass('show');
-  });
+    $('body').css('overflow', 'auto');
+  }
 
 });
 

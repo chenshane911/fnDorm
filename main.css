@@ -9,6 +9,7 @@
 
 .bdy{
 	background-color: #191919;
+  min-height: 100vh;
 }
 
 
@@ -217,6 +218,7 @@ html, body {
 
 
 .topbox{
+  display: none;
 	position: fixed;
 	right: 0px;
 	bottom: 0px;
@@ -224,7 +226,6 @@ html, body {
 	background-color: #313131;
 	opacity: .8;
 	z-index: 4;
-
 }
 
 .topbox:hover{
@@ -299,6 +300,7 @@ html, body {
 }
 
 .gallery {
+  background-color: #191919;
   opacity: 0;
   pointer-events: none;
   transition: opacity 1s linear;
@@ -325,9 +327,14 @@ html, body {
   padding: 20px;
   cursor: pointer;
   z-index: 9;
+  width: 30px;
+}
+.gallery-close > img {
+  width: 100%;
 }
 
 .m-p-g {
+  overflow: auto;
   max-width: 100vw;
   width: 100vw;
   height: 100vh;
@@ -349,15 +356,12 @@ html, body {
 	letter-spacing: 1.3;
 	color:#D5D5D5;
 	position: relative;
-	
-	
-	
 }
-
 
 .gallerybox{
 	position: absolute;
 	right: 40px;
 	top:60px;
-	align-items: center;
+  display: flex;
+  align-items: center;
 }
