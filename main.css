@@ -288,6 +288,7 @@ html, body {
 	background: #2C2C2C;
 }
 
+
 .gallery-btn {
   color: white;
   position: absolute;
@@ -334,4 +335,29 @@ html, body {
 .m-p-g__thumbs {
   width: 100vw;
   height: 100vh;
+}
+
+
+.galleryicon{
+	position: relative;
+	width: 25px;
+}
+
+.galleryhint{
+	font-size: 0.9em;
+	font-size: .9;
+	letter-spacing: 1.3;
+	color:#D5D5D5;
+	position: relative;
+	
+	
+	
+}
+
+
+.gallerybox{
+	position: absolute;
+	right: 40px;
+	top:60px;
+	align-items: center;
 }
