@@ -33,7 +33,7 @@ $(document).ready(function(){
       $('.p12').fadeIn();
     }
 
-    if ($(this).scrollTop()>1700)
+    if ($(this).scrollTop()>1600)
     {
       $('.appicon').fadeIn();
     }
@@ -44,11 +44,11 @@ $(document).ready(function(){
 
     if ($(this).scrollTop()>0)
     {
-      $('.scroll').fadeOut();
+      $('.scroll,.logo').fadeOut();
     }
     else
     {
-      $('.scroll').fadeIn();
+      $('.scroll,.logo').fadeIn();
     }
   });
 
