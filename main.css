@@ -271,6 +271,9 @@ html, body {
     line-height: 1.3;
     color: #2B2B2B;
 }
+_::-webkit-:host:not(:root:root), .parallax1 {
+  background-attachment: scroll;
+}
 
 
 
