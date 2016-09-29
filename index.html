@@ -9,16 +9,17 @@
       <meta property="og:title"         content="fnDorm" />
       <meta property="og:description"   content="ya" />
       <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
-      <script type="text/javascript" src="./vendor/material-photo-gallery.min.js"></script>
       <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
-      <script src="main.js?v=2016092411"></script>
-      <link href="./vendor/material-photo-gallery.css" rel="stylesheet">
-      <link rel="stylesheet" type="text/css" href="main.css?v=2016092411">
-      <link href="mobile.css?v=2016092411" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Nixie+One|Open+Sans|Raleway" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
-      <link href="https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.4.0/hint.min.css" rel="stylesheet">
-      <link rel="shortcut icon" href="./img/appicon.png" type="image/x-icon">
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.lazyload/1.9.3/jquery.lazyload.min.js"></script>
+      <script type="text/javascript" src="main.js?v=2016092900"></script>
+      <script type="text/javascript" src="gallery.js?v=2016092900"></script>
+      <link rel="stylesheet" type="text/css" href="main.css?v=2016092900">
+      <link rel="stylesheet" type="text/css" href="gallery.css?v=2016092900">
+      <link rel="stylesheet" href="mobile.css?v=2016092900">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nixie+One|Open+Sans|Raleway">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caveat">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.4.0/hint.min.css">
+      <link rel="shortcut icon" type="image/x-icon" href="./img/appicon.png">
   </head>
 
   <body>
@@ -27,9 +28,9 @@
       <img src="img/logo_white.png" class="logo">
       <img src="img/scroll.png" class="scroll">
       <img src="img/bg.jpg" class="bg">
-      <div class="gallerybox gallery-btn">
-        <span class="galleryhint">一些紀錄</span>
+      <div class="gallery-btn">
         <img src="img/gicon.png" class="galleryicon">
+        <span class="galleryhint">一些紀錄</span>
       </div>
       <div class="p1"><span class="chttle" >全新的服務 給值得的你</span></div>
       <div class="p12"><span class="chttle" >將花費在收領包裹的心思 放在更值得的人以及美好生活上</span></div>
@@ -90,23 +91,15 @@
       <img src="img/appicon.png" class="appicon">
     </footer>
     <div class="gallery">
-      <div class="m-p-g">
-        <div class="m-p-g__thumbs" data-google-image-layout data-max-height="350">
-          <img src="img/im3s.jpg" data-full="img/im3.jpg" class="m-p-g__thumbs-img" />
-          <img src="img/im7s.jpg" data-full="img/im7.jpg" class="m-p-g__thumbs-img" />
-          <img src="img/im5s.jpg" data-full="img/im5.jpg" class="m-p-g__thumbs-img" />
-          <img src="img/im9s.jpg" data-full="img/im9.jpg" class="m-p-g__thumbs-img" />
-          <img src="img/im2s.jpg" data-full="img/im2.jpg" class="m-p-g__thumbs-img" />
-          <img src="img/im6s.jpg" data-full="img/im6.jpg" class="m-p-g__thumbs-img" />
-          <img src="img/im1s.jpg" data-full="img/im1.jpg" class="m-p-g__thumbs-img" />
-          <img src="img/im4s.jpg" data-full="img/im4.jpg" class="m-p-g__thumbs-img" />
-          <img src="img/im8s.jpg" data-full="img/im8.jpg" class="m-p-g__thumbs-img" />
-        </div>
-        <div class="m-p-g__fullscreen"></div>
-      </div>
-      <span class="gallery-close">
-        <img src="./img/close_ion.png" />
-      </span>
+      <img class="lazy" data-original="img/im3.jpg" />
+      <img class="lazy" data-original="img/im7.jpg" />
+      <img class="lazy" data-original="img/im5.jpg" />
+      <img class="lazy" data-original="img/im9.jpg" />
+      <img class="lazy" data-original="img/im2.jpg" />
+      <img class="lazy" data-original="img/im6.jpg" />
+      <img class="lazy" data-original="img/im1.jpg" />
+      <img class="lazy" data-original="img/im4.jpg" />
+      <img class="lazy" data-original="img/im8.jpg" />
     </div>
     <script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

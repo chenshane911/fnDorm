@@ -294,8 +294,6 @@ _::-webkit-:host:not(:root:root), .parallax1 {
 }
 
 
-
-
 .scroll{
 	position: absolute;
 	width: 90px;
@@ -308,81 +306,4 @@ _::-webkit-:host:not(:root:root), .parallax1 {
 .ftr{
 	height: 400px;
 	background: #2C2C2C;
-}
-
-
-.gallery-btn {
-  color: white;
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 20px;
-  cursor: pointer;
-}
-
-.gallery {
-  background-color: #191919;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 1s linear;
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  z-index: 9;
-  width: 100%;
-  height: 100%;
-}
-.gallery.show {
-  opacity: 1;
-  pointer-events: auto;
-}
-
-.gallery-close {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  color: white;
-  display: inline-block;
-  padding: 20px;
-  cursor: pointer;
-  z-index: 9;
-  width: 30px;
-}
-.gallery-close > img {
-  width: 100%;
-}
-
-.m-p-g {
-  overflow: auto;
-  max-width: 100vw;
-  width: 100vw;
-  height: 100vh;
-}
-.m-p-g__thumbs {
-  width: 100%;
-  height: 100%;
-}
-
-
-.galleryicon{
-	position: relative;
-	width: 25px;
-}
-
-.galleryhint{
-	font-size: 0.9em;
-	font-size: .9;
-	letter-spacing: 1.3;
-	color:#D5D5D5;
-	position: relative;
-}
-
-.gallerybox{
-	position: absolute;
-	right: 30px;
-	top: 30px;
-  display: flex;
-  align-items: center;
 }

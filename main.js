@@ -51,26 +51,6 @@ $(document).ready(function(){
       $('.scroll,.logo').fadeIn();
     }
   });
-
-  new MaterialPhotoGallery(document.querySelector('.m-p-g'));
-
-  $('.gallery-btn').click(function() {
-    var $ele = $('.gallery');
-    if ($ele.hasClass('show')) {
-      closeGallery();
-    } else {
-      $ele.addClass('show');
-      $('body').css('overflow', 'hidden');
-    }
-  });
-
-  $('.gallery-close').click(closeGallery);
-
-  function closeGallery() {
-    $('.gallery').removeClass('show');
-    $('body').css('overflow', 'auto');
-  }
-
 });
 
 
