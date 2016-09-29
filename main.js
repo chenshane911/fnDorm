@@ -33,7 +33,7 @@ $(document).ready(function(){
       $('.p12').fadeIn();
     }
 
-    if ($(this).scrollTop()>1400)
+    if ($(window).scrollTop() + $(window).height() === $(document).height())
     {
       $('.appicon').fadeIn();
     }
