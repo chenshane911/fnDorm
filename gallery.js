@@ -12,10 +12,12 @@ $(document).ready(function() {
 
   $gallery.mouseenter(function() {
     $body.css('overflow', 'hidden');
+    $gallery.css('overflow', 'auto');
   });
 
   $gallery.mouseleave(function() {
     $body.css('overflow', 'auto');
+    $gallery.css('overflow', 'hidden');
   });
 
   $galleryBtn.click(function() {
