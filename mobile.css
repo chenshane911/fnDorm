@@ -103,14 +103,20 @@
   }
 
   .story2-content {
-    flex-direction: column;
+    left: 0;
     align-items: center;
   }
   
   .story2-item {
     width: 150px;
-    justify-content: flex-start;
-    margin: 15px 0;
+  }
+
+  .story2-desc {
+    display: none;
+  }
+
+  .story2-item .hint:after, .story2-item .hint:before {
+    display: initial;
   }
 
   .appicon {

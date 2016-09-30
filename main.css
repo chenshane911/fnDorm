@@ -188,17 +188,34 @@ html, body {
 .story2-content {
   position: relative;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
+  align-items: flex-start;
+  left: 40%;
 }
 
 .story2-item {
-  flex: 1;
+  margin: 15px 0;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   color: white;
+}
+
+.story2-item .hint:after, .story2-item .hint:before {
+  display: none;
+}
+
+.story2-item .story2-desc {
+  transition: all 600ms ease-in-out;
+  opacity: 0;
+  transform: translateY(4px);
+}
+
+.story2-item:hover .story2-desc {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .story2-item img {
