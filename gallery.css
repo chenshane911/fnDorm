@@ -1,6 +1,6 @@
 .gallery-btn {
   color: white;
-  position: absolute;
+  position: fixed;
   width: 70px;
 	right: 30px;
 	top: 30px;
