@@ -103,12 +103,14 @@
   }
 
   .story2-content {
-    left: 0;
+    flex-direction: column;
     align-items: center;
   }
   
   .story2-item {
     width: 150px;
+    justify-content: flex-start;
+    margin: 15px 0;
   }
 
   .appicon {
@@ -126,7 +128,6 @@
   }
 
   [class*=hint--][aria-label]:after {
-    white-space: pre-wrap;
     width: 150px;
   }
 }
