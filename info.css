@@ -1,0 +1,131 @@
+.info-btn {
+  color: white;
+  position: fixed;
+  width: 70px;
+	right: 30px;
+	top: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+  cursor: pointer;
+  z-index: 99;
+  transition: all 300ms ease-in-out;
+}
+.infoicon{
+	position: relative;
+	width: 25px;
+  transform: rotate(180deg);
+  transition: transform 300ms ease-in-out;
+}
+.infohint{
+	font-size: 0.9em;
+	letter-spacing: 1.3px;
+	color:#D5D5D5;
+	position: absolute;
+  right: 0;
+}
+
+.info-btn.shrink {
+  top: 0;
+  right: 0;
+  width: 25px;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+}
+.info-btn.shrink .infoicon {
+  transform: rotate(0deg);
+}
+
+.info {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 1);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9;
+  width: 30vh;
+  min-width: 300px;
+  overflow: auto;
+  transition: transform 300ms cubic-bezier(0.4, 0, 1, 1);
+  transform: translateX(100%);
+}
+
+.info.show {
+  transform: translateX(0);
+  z-index: 999;
+}
+
+.info img {
+  width: 100%;
+}
+
+.info .info-1, .info .info-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  height: 100%;
+  padding: 45px 25px;
+  box-sizing: border-box;
+  line-height: 1.7;
+}
+
+.info .info-1 span:first-child {
+  font-size: 1.2rem;
+  margin: 25px 0 60px;
+}
+
+.info .info-1 span:last-child {
+  position: absolute;
+  bottom: 20px;
+  left: 10px;
+  text-decoration: underline;
+  color: #db3c3c;
+  cursor: pointer;
+}
+
+.info .info-2 span:first-child {
+  font-size: 1.2rem;
+  margin: 25px 0;
+  color: #db3c3c;
+}
+
+.info .info-2 span:nth-child(2), .info .info-2 span:nth-child(3) {
+  font-size: 0.9rem;
+  margin: 5px 0;
+  color: #db3c3c;
+}
+
+.info .info-2 span:nth-child(3) {
+  margin-bottom: 60px;
+}
+
+.info .arrow-down {
+  display: inline-block;
+  width: 1px;
+  background-color: #282828;
+  height: 80px;
+  position: relative;
+  margin: 20px 0;
+}
+
+.info .arrow-down::before, .info .arrow-down::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 1px;
+  height: 15px;
+  background-color: #282828;
+  transform-origin: bottom;
+}
+.info .arrow-down::before {
+  transform: rotate(-30deg);
+}
+.info .arrow-down::after {
+  transform: rotate(30deg);
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
