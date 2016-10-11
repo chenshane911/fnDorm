@@ -1,0 +1,79 @@
+.qa-btn {
+  color: white;
+  position: fixed;
+  width: 70px;
+	right: 30px;
+	top: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+  cursor: pointer;
+  z-index: 99;
+  transition: all 300ms ease-in-out;
+}
+.qaicon{
+	position: relative;
+	width: 25px;
+  transform: rotate(180deg);
+  transition: transform 300ms ease-in-out;
+}
+.qahint{
+	font-size: 0.9em;
+	letter-spacing: 1.3px;
+	color:#D5D5D5;
+	position: absolute;
+  right: 0;
+}
+
+.qa-btn.shrink {
+  top: 0;
+  right: 0;
+  width: 25px;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+}
+.qa-btn.shrink .qaicon {
+  transform: rotate(0deg);
+}
+
+.qa {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 1);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9;
+  width: 300px;
+  min-width: 300px;
+  overflow: auto;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: transform 300ms cubic-bezier(0.4, 0, 1, 1);
+  transform: translateX(100%);
+  display: flex;
+  flex-direction: column;
+}
+
+.qa.show {
+  transform: translateX(0);
+  z-index: 999;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+.qa .qa-q {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 40px 0 10px;
+}
+
+.qa .qa-q:first-child {
+  margin-top: 60px;
+}
+
+.qa .qa-q:last-child {
+  font-size: 1em;
+}
