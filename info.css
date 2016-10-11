@@ -44,7 +44,7 @@
   right: 0;
   bottom: 0;
   z-index: 9;
-  width: 300px;
+  width: 330px;
   min-width: 300px;
   overflow: auto;
   transition: transform 300ms cubic-bezier(0.4, 0, 1, 1);
