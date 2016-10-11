@@ -82,7 +82,5 @@
 
 .qa .qa-timestamp {
   font-size: 0.8em;
-  position: absolute;
-  right: 3px;
-  bottom: 3px;
+  text-align: right;
 }
