@@ -1,4 +1,10 @@
 $(document).ready(function(){
+  var md = new MobileDetect(window.navigator.userAgent);
+  if (md.is('iPhone')) {
+    window.location.href = 'https://itunes.apple.com/us/app/fndorm/id1158534472';
+  } else if (md.is('AndroidOS')) {
+    window.location.href = 'https://play.google.com/store/apps/details?id=com.fineighbor.fndorm';
+  }
 
   $('#back-top').click(function (e) {
     e.preventDefault();
@@ -52,6 +58,3 @@ $(document).ready(function(){
     }
   });
 });
-
-
-
