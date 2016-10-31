@@ -136,4 +136,9 @@
   [class*=hint--][aria-label]:after {
     width: 150px;
   }
+  
+  
+  .gallery,.info,.qa{
+    width: 100vw;
+  }
 }
