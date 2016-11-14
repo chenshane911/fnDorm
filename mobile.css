@@ -154,4 +154,8 @@
     overflow: hidden !important;
     position: fixed;
   }
+
+  .disable-scroll-mobile .shrink span {
+    display: none !important;
+  }
 }
