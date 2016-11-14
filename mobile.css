@@ -147,6 +147,10 @@
     right: 10px;
   }
   .gallery-btn.hide-mobile > span, .info-btn.hide-mobile > span, .qa-btn.hide-mobile > span { 
-    display: none;
+    display: none !important;
+  }
+
+  .disable-scroll-mobile {
+    overflow: hidden;
   }
 }

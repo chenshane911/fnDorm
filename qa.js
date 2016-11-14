@@ -18,10 +18,12 @@ $(document).ready(function() {
       $qa.removeClass('show');
       $qaBtn.removeClass('shrink');
       $qaBtn.find('.qahint').fadeIn();
+      $('body').removeClass('disable-scroll-mobile');
     } else {
       $qa.addClass('show');
       $qaBtn.addClass('shrink');
       $qaBtn.find('.qahint').fadeOut();
+      $('body').addClass('disable-scroll-mobile');
     }
   });
 });

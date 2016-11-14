@@ -25,10 +25,12 @@ $(document).ready(function() {
       $gallery.removeClass('show');
       $galleryBtn.removeClass('shrink');
       $galleryBtn.find('.galleryhint').fadeIn();
+      $('body').removeClass('disable-scroll-mobile');
     } else {
       $gallery.addClass('show');
       $galleryBtn.addClass('shrink');
       $galleryBtn.find('.galleryhint').fadeOut();
+      $('body').addClass('disable-scroll-mobile');
     }
   });
 });

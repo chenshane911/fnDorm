@@ -18,11 +18,13 @@ $(document).ready(function() {
       $info.removeClass('show');
       $infoBtn.removeClass('shrink');
       $infoBtn.find('.infohint').fadeIn();
+      $('body').removeClass('disable-scroll-mobile');
     } else {
       $info.scrollTop(0);
       $info.addClass('show');
       $infoBtn.addClass('shrink');
       $infoBtn.find('.infohint').fadeOut();
+      $('body').addClass('disable-scroll-mobile');
     }
   });
 
