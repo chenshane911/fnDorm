@@ -152,5 +152,6 @@
 
   .disable-scroll-mobile {
     overflow: hidden !important;
+    position: fixed;
   }
 }
