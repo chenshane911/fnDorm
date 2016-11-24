@@ -30,6 +30,14 @@
 	color: #C63838;
 }
 
+.qa-qdiv ul {
+  list-style: none;
+  padding-left: 15px;
+}
+.qa-qdiv li {
+  margin: 10px 0;
+}
+
 .qa-btn.shrink {
   top: 0;
   right: 0;
@@ -48,8 +56,8 @@
   right: 0;
   bottom: 0;
   z-index: 9;
-  width: 300px;
-  min-width: 300px;
+  width: 400px;
+  min-width: 400px;
   overflow: auto;
   padding: 30px 20px;
   box-sizing: border-box;
