@@ -140,6 +140,7 @@
   
   .gallery,.info,.qa{
     width: 100vw;
+    min-width: 100vw;
   }
 
   .gallery-btn.hide-mobile, .info-btn.hide-mobile, .qa-btn.hide-mobile {
