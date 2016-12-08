@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Source Sans Pro';
+}
+
+body {
+  overflow: auto;
+}
+
+span, pre, p, label {
+  letter-spacing: 1.2px;
+  line-height: 1.7;
+}
+
+.header {
+  padding: 20px 0 10px;
+  text-align: center;
+}
+.header img {
+  width: 80px;
+}
+
+.body {
+  min-height: 100vh;
+}
+
+.footer {
+  height: 100vh;
+}
+
+.image {
+  text-align: center;
+  border-bottom: 1px solid #efefef;
+}
+
+.image img {
+  width: 200px;
+}
+
+pre {
+  white-space: pre-wrap;
+  line-height: 2;
+  text-align: left;
+}
+
+.event .event-img {
+  width: 300px;
+}
+
+input.field {
+  background-color: transparent;
+  color: #efefef;
+}
+label.floating-label {
+  background-color: transparent;
+}
+.field:valid + label.floating-label {
+  color: white;
+}
+div.field-underline {
+  border: none;
+  border-bottom: 1px solid #efefef;
+}
+div.field-container {
+  width: 100%;
+}
