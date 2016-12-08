@@ -3,12 +3,20 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta property="og:url"           content="https://chenshane911.github.io/fnDorm/" />
+    <meta property="og:type"          content="fnDorm" />
+    <meta property="og:title"         content="fnDorm" />
+    <meta property="og:description"   content="ya" />
+    <meta property="og:image" content="https://chenshane911.github.io/fnDorm/img/bg.png">
     <title>fnDorm</title>
     <link rel="stylesheet" href="css/reveal.css">
     <link rel="stylesheet" href="css/theme/black.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/tabs.css">
     <link rel="stylesheet" href="css/floating_label_input.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/appicon.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   </head>
   <body>
     <div class="header">
@@ -23,7 +31,7 @@
           </label>
           <div id="tab-content1" class="tab-content" role="tabpanel" aria-labelledby="description" aria-hidden="false">
             <div class="image">
-              <img src="assets/n1.png" src="hihi" />
+              <img src="assets/m1.png" alt="hihi" />
             </div>
             <pre>
 邀請你上傳宿舍生活的攝影與文字。宿舍是我們的異鄉生活搖籃，我們希望透過這樣的方式，累積宿舍共同的記憶。可以上傳你跟室友最溫馨的時刻、最難過的角落、最動人的感動、爆笑的誤會等等。於宿舍一樓設有投影機，投影出大家的作品，目的是希望可以讓大家在大廳有所停留，看看彼此的生活，引發更多互動：原來宿舍裡富含的故事這麼多，與自己遭遇同樣情節的人就在同一個樓層！讓先前未拆封的故事有機會在「家」裡相遇。
@@ -37,21 +45,36 @@
           </label>
           <div id="tab-content2" class="tab-content" role="tabpanel" aria-labelledby="description" aria-hidden="false">
             <div class="image">
-              <img src="assets/m2.png" src="event" />
+              <img src="assets/m2.png" alt="event" />
             </div>
-            <img class="event-img" src="assets/m2-2.png" src="event" />
+            <img class="event-img" src="assets/m2-2.png" alt="event" />
             <pre>
 邀請你上傳宿舍生活的攝影與文字。宿舍是我們的異鄉生活搖籃，我們希望透過這樣的方式，累積宿舍共同的記憶。可以上傳你跟室友最溫馨的時刻、最難過的角落、最動人的感動、爆笑的誤會等等。於宿舍一樓設有投影機，投影出大家的作品，目的是希望可以讓大家在大廳有所停留，看看彼此的生活，引發更多互動：原來宿舍裡富含的故事這麼多，與自己遭遇同樣情節的人就在同一個樓層！讓先前未拆封的故事有機會在「家」裡相遇。
             </pre>
           </div>
-        <li>
+        </li>
+        <li class="product">
           <input type="radio" name="tabs" id="tab3" />
           <label for="tab3" role="tab" aria-selected="true" aria-controls="panel3" tabindex="0">
-            fnPaper
+            product
           </label>
           <div id="tab-content3" class="tab-content" role="tabpanel" aria-labelledby="description" aria-hidden="false">
             <div class="image">
-              <img src="assets/m3.png" src="event" />
+              <img src="assets/m3.png" alt="product" />
+            </div>
+            <div class="product-header">
+              <span>fnPaper</span>
+              <img src="assets/m3-2.png" alt="product" />
+            </div>
+            <pre>
+為了讓你與鄰居有更多的認識、產生穩固的情感。 2016年3月我們開始著手設計宿舍專屬的服務，直到2016/10/24正式啟動宿舍專屬的服務：「fnDorm」宿舍專屬的數位社區。
+
+從 fnPapr （功能）中能看見宿舍裡彼此的喜怒哀樂，發現與自己生活相近的寢室、分享那些爆笑、溫馨、難過的夜晚。（女六舍只能看見女六舍、男二舍只能看見男二舍）。重視地域性、真實性、扎實的連結，要以這樣的方式，感受到從沒有機會了解的居住本質：「人」
+            </pre>
+            <a class="btn" href="//ntu.fndorm.com/paper" target="_blank">前往網頁版</a>
+            <div class="product-header">
+              <span>包裹收領</span>
+              <img src="assets/m3-3.png" alt="product" />
             </div>
             <pre>
 為了讓你與鄰居有更多的認識、產生穩固的情感。 2016年3月我們開始著手設計宿舍專屬的服務，直到2016/10/24正式啟動宿舍專屬的服務：「fnDorm」宿舍專屬的數位社區。
@@ -59,6 +82,7 @@
 從 fnPapr （功能）中能看見宿舍裡彼此的喜怒哀樂，發現與自己生活相近的寢室、分享那些爆笑、溫馨、難過的夜晚。（女六舍只能看見女六舍、男二舍只能看見男二舍）。重視地域性、真實性、扎實的連結，要以這樣的方式，感受到從沒有機會了解的居住本質：「人」
             </pre>
           </div>
+        </li>
         <li>
           <input type="radio" name="tabs" id="tab4" />
           <label for="tab4" role="tab" aria-selected="true" aria-controls="panel4" tabindex="0">
@@ -66,7 +90,7 @@
           </label>
           <div id="tab-content4" class="tab-content" role="tabpanel" aria-labelledby="description" aria-hidden="false">
             <div class="image">
-              <img src="assets/m4.png" src="event" />
+              <img src="assets/m4.png" alt="contact" />
             </div>
             <div class="field-container">  
               <input type="text" class="field" required placeholder="標題"/>
@@ -116,16 +140,16 @@
 
     <script>
 Reveal.initialize({
-
   autoSlide: 5000,
-
   autoSlideStoppable: false,
-
   loop: true,
-
   controls: false,
-
-  progress: false
+  progress: false,
+  width: "100%",
+  height: "100%",
+  margin: 0,
+  minScale: 1,
+  maxScale: 1
 });
     </script>
   </body>

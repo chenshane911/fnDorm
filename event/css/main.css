@@ -17,6 +17,11 @@ span, pre, p, label {
   line-height: 1.7;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .header {
   padding: 20px 0 10px;
   text-align: center;
@@ -27,10 +32,25 @@ span, pre, p, label {
 
 .body {
   min-height: 100vh;
+  transition: height 500ms linear;
 }
 
 .footer {
   height: 100vh;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 100px;
+  border-radius: 30px;
+  border: 1px solid #efefef;
+  cursor: pointer;
+}
+.btn:hover {
+  opacity: 0.6;
+}
+.btn:active {
+  transform: translate3d(1px, 1px, 0);
 }
 
 .image {
@@ -52,6 +72,31 @@ pre {
   width: 300px;
 }
 
+.product .image {
+  border: none;
+  margin-bottom: 40px;
+}
+.product .product-header {
+  text-align: left;
+  border-bottom: 1px solid #efefef;
+  position: relative;
+}
+.product .product-header img {
+  width: 80px;
+  float: right;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.product .product-header span {
+  margin-bottom: 15px;
+  font-size: 1.3em;
+  display: inline-block;
+}
+.product .btn {
+  margin-bottom: 80px;
+}
+
 input.field {
   background-color: transparent;
   color: #efefef;
@@ -68,4 +113,13 @@ div.field-underline {
 }
 div.field-container {
   width: 100%;
+  margin: 30px 0;
+}
+.reveal img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.reveal section img {
+  border: none;
+  margin: 0;
 }

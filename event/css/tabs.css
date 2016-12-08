@@ -1,5 +1,5 @@
 .tabs {
-  width: 50vw;
+  width: 400px;
   list-style: none;
   position: relative;
   color: #d0d0d0;
@@ -33,6 +33,7 @@
   top: 4px;
   transition: all 0.2s ease-in-out;
   opacity: 0.4;
+  outline: none;
 }
 .tabs label[role=tab]::before {
   content: '';
@@ -50,12 +51,12 @@
 .tabs .tab-content {
   z-index: 2;
   opacity: 0;
+  visibility: none;
   overflow: hidden;
   width: 100%;
-  transition: opacity 300ms linear;
+  transition: opacity 300ms linear, visibility 300ms linear;
   font-size: 17px;
   line-height: 25px;
-  padding: 25px;
   position: absolute;
   top: 53px;
   left: 0;
@@ -72,5 +73,6 @@
 
 .tabs [id^="tab"]:checked ~ [id^="tab-content"] {
   opacity: 1;
+  visibility: visible;
   z-index: 99;
 }
