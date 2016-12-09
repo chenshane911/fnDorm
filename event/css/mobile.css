@@ -27,4 +27,17 @@
   pre {
     font-size: 0.8em;
   }
+
+  .install-btn {
+    padding: 5px;
+  }
+
+  .install-btn .install-list {
+    padding: 5px;
+  }
+
+  .event .red-dot {
+    top: 18px;
+    left: 88px;
+  }
 }

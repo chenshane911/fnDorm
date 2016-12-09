@@ -32,11 +32,14 @@ a {
 
 .body {
   min-height: 100vh;
+  overflow: hidden;
   transition: height 500ms linear;
 }
 
 .footer {
-  height: 100vh;
+  padding: 10px;
+  color: #efefef;
+  text-align: center;
 }
 
 .btn {
@@ -68,8 +71,51 @@ pre {
   text-align: left;
 }
 
+.install-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: #efefef;
+  padding: 5px 30px;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 0.8em;
+}
+.install-btn:hover .install-list {
+  height: 80px;
+}
+
+.install-btn .install-list {
+  position: absolute;
+  right: 0;
+  top: 100%;
+  overflow: hidden;
+  transition: height 300ms linear;
+  padding: 0 30px;
+  margin: 10px 0;
+  width: 100%;
+  height: 0;
+}
+.install-btn .install-list a {
+  display: inline-block;
+  text-decoration: none;
+  color: #efefef;
+  height: 25px;
+}
+
 .event .event-img {
   width: 300px;
+}
+.event .red-dot {
+  display: inline-block;
+  position: absolute;
+  left: 107px;
+  top: 30px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ec5b5b;
+  opacity: 1;
 }
 
 .product .image {
@@ -97,6 +143,10 @@ pre {
   margin-bottom: 80px;
 }
 
+.blog .btn {
+  margin: 50px 0;
+}
+
 input.field {
   background-color: transparent;
   color: #efefef;
@@ -121,5 +171,18 @@ div.field-container {
 }
 .reveal section img {
   border: none;
+  margin: 0;
+}
+
+.link-style {
+  text-decoration: underline;
+}
+
+input[autocomplete="off"]::-webkit-contacts-auto-fill-button {
+  visibility: hidden;
+  display: none !important;
+  pointer-events: none;
+  height: 0;
+  width: 0;
   margin: 0;
 }
