@@ -1,6 +1,7 @@
 $(function() {
   var $body = $('.body');
   
+  // tabs
   var headerHeight = 65;
   var id = $('input[name=tabs]:checked').prop('id');
   $body.height($('#tab-content' + id[id.length - 1]).height() + headerHeight);
@@ -12,6 +13,7 @@ $(function() {
   });
 
 
+  // contact
   $title = $('#input-title');
   $name = $('#input-name');
   $email = $('#input-email');
@@ -62,4 +64,11 @@ $(function() {
       }
     });
   });
+  
+
+  // red-dot
+  if ($(window).width() < 480) {
+    var offsetLeft = $('label[for="tab2"]').offset().left;
+    $('.event .red-dot').css({ left: offsetLeft });
+  }
 });
