@@ -106,6 +106,9 @@ pre {
 .event .event-img {
   width: 300px;
 }
+.event .event-img-demo {
+  width: 100%;
+}
 .event .red-dot {
   display: inline-block;
   position: absolute;
